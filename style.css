@@ -1,0 +1,466 @@
+/*Agregando fuente de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none; /*Quita la linea de los enlaces*/
+    list-style: none; /*Quita las bolitas de las listas*/
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    max-width: 1000px;/*Cuando el contenido excede esa medida el contenido se centra*/ /*AQUI ERA 1200*/
+    margin:0 auto; /*Centra el contenido*/
+}
+
+.header{
+    background-image: linear-gradient( /*Agrega una imagen de fondo: agregar degradado*/
+        rgb(227, 172, 217),
+        rgba(0, 0, 0, 0.7)),
+        url(images/banner-menu.jpg);
+    background-position: center bottom;/*La imagen de fondo se centrará horizontalmente y se ubicará en la parte inferior del elemento*/
+    background-repeat: no-repeat;
+    background-size: cover; /*La imagen de fondo, se ajustará para cubrir todo el tamaño sin distorsionarse*/
+    min-height: 70vh; /*Establece que la altura min será el 70% del alto de la ventana del naevgador*/
+    display: flex; /*Establece el elemento como un contenedor flexible. Permite alinear y distribuir los elementos internos de diferentes maneras*/
+    align-items: center; /*Se usa junto con el desplay:felx y aliena verticalmente los elementos delntro de contenedor*/
+}
+
+.menu {
+    position: absolute; /*Establece la posición del elemento*/
+    top: 0; /*Establece la posición superior del elemento*/
+    left: 0; /*Establece la posición izquierda del elemento*/
+    right: 0; /*Establece la posición derecha del elemento*/
+    display: flex; /*Establece el elemento como un contenedor flexible. Permite alinear y distribuir los elementos internos de diferentes maneras*/
+    align-items: center; /*Se usa junto con el de arriba y aliena verticalmente los elementos delntro de contenedor*/
+    justify-content: space-between; /*Se usa junto con el de arriba y aliena horizontalmente los elementos delntro de contenedor*/
+}
+
+.logo {
+    color: #FF1973; /*Color del texto*/
+    font-size: 25px; /*Tamaño de la fuente*/
+    font-weight: 800; /*Grosor de la fuente*/
+    padding-left: 30px;
+}
+
+.menu .navbar ul li{
+    position: relative; /*Establece la posición del elemento*/ 
+    float:left; /*Establece la posición de los elementos (izquierda, osea en linea recta)*/
+}
+
+.menu .navbar ul li a {
+    font-size: 18px; /*Tamaño de la fuente*/
+    padding: 20px; /*Agrega un espacio entre el borde y el contenido*/
+    color: #FFFDFC; /*Color del texto*/
+    display: block; /*Establece el elemento como un bloque*/
+    font-weight: 600; /*Grosor de la fuente agregada*/
+}
+
+.menu .navbar ul li a:hover  { /*:hover Agrega un efecto al pasar el mouse por encima*/
+    color: #000000;
+}
+
+#menu {
+    display: none; /*Oculta el elemento---------------------*/
+}
+
+.menu-icono {
+    width: 50px;
+}
+
+.menu label {
+    cursor: pointer; /*Cambia el cursor del mouse*/;
+    /*display: none;*/ /*Oculta el elemento*/
+}
+
+
+
+.header-content {
+    text-align: center; /*Alinea el texto al centro*/
+}
+
+.header-content h1 {
+    font-size: 75px; /*Tamaño de la fuente*/
+    line-height: 80px; /*Agrega un espacio entre lineas verticalmente*/
+    color: #ffffff;
+    text-transform: uppercase; /*Transforma el texto a mayusculas*/
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px; /*Tamaño de la fuente*/
+    color: #ffffff;
+    padding: 0 250px; /*Agrega un espacio entre el borde y el contenido*/
+    margin-bottom: 35px; /*Agrega un espacio entre el borde y el contenido*/
+}
+
+.btn-1 {
+    display: inline-block; /*Establece el elemento como un bloque*//*Lo ponemos como block para poder usar correctamente el margin y padding porque es texto*/
+    padding: 11px 35px;
+    background-color: #ed9fafea;
+    color: #F9FAFC;
+    text-transform: uppercase; /*Transforma el texto a mayusculas*/
+}
+
+.btn-1:hover { /*:hover Agrega un efecto al pasar el mouse por encima*/
+    background-color: #f9a5b5;
+}
+
+
+
+
+.nosotros {
+    padding: 100px 0; /*Agrega un espacio entre el borde y el contenido*/ /*Arriba  y abajo*/
+    background-color: #fff7fa;
+    position: relative; /*Establece la posición del elemento*/
+}
+
+.nosotros-content {
+    text-align: center; /*Alinea el texto al centro*/
+}
+
+.nosotros-content h2 {
+    font-size: 55px; /*Tamaño de la fuente*/
+    line-height: 100px; /*Agrega un espacio entre lineas verticalmente*/
+    color:#FF1973;
+    text-transform: uppercase; /*Transforma el texto a mayusculas*/
+    padding: 0 250px; /*Agrega un espacio entre el borde y el contenido*//*izquierda derecha*/
+    margin-bottom: 15px; /*Agrega un espacio entre el borde y el contenido*/
+}
+
+.txt-p {
+    font-size: 16px; /*Tamaño de la fuente*/
+    color: #414247;
+    padding: 0 250px; /*Agrega un espacio entre el borde y el contenido*/ /*izquierda derecha*/
+    margin-bottom: 35px; /*Agrega un espacio entre el borde y el contenido*/
+}
+
+.nosotros-group {
+    display: flex; /* Establece el elemento como un contenedor flexible. Permite alinear y distribuir los elementos internos de diferentes maneras*/
+    justify-content: space-between; /*Se usa junto con el de arriba y aliena horizontalmente los elementos delntro de contenedor*/
+    margin-bottom: 50px;
+}
+
+.nosotros-1 {
+    padding: 0 25px;
+}
+
+.nosotros-1 img {
+    width: 200px;
+}
+
+.nosotros-img{
+    position: absolute; /*Establece la posición del elemento*/
+    top: 0; /*Establece la posición superior del elemento*/
+    right: 0; /*Establece la posición derecha del elemento*/
+}
+
+.nosotros-1 h3 {
+    color: #323337;
+    font-size: 20px; /*Tamaño de la fuente*/
+    margin-bottom: 15px; /*Agrega un espacio entre el borde y el contenido*/
+}
+
+/*SERVICIOS*/
+.services {
+    background-image: linear-gradient(
+        rgba(227, 172, 217, 0.644),
+        rgba(0, 0, 0, 0.7)),
+        url(images/fondo-servicios.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; /*Fija la imagen de fondo*/
+        padding: 100px 0; 
+}
+
+.services-content {
+    text-align: center; /*Alinea el texto al centro*/
+}
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #ffffff;
+    text-transform: uppercase; /*Transforma el texto a mayusculas*/
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #fdfdfd;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group {
+    display: flex;/* Establece el elemento como un contenedor flexible. Permite alinear y distribuir los elementos internos de diferentes maneras*/
+    justify-content: space-between; /*Se usa junto con el de arriba y aliena horizontalmente los elementos delntro de contenedor*/
+    margin-bottom: 50px;
+}
+
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img{
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3 {
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+
+.general-2 {
+    background-image: url(images/img1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(images/img2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px; /*Agrega un espacio entre lineas verticalmente*/
+    color: #323337;
+    text-transform: uppercase; /*Transforma el texto a mayusculas*/
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin-bottom: 25px 0 45px 0;
+}
+
+
+/*Blog*/
+
+.blog {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 15px 55px;
+}
+
+.blog-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: #323337;
+}
+
+/*Blog(video)*/
+
+.video {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.video-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-1 {
+    padding: 15px 55px;
+}
+
+.video-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.video-1 h3 {
+    font-size: 25px;
+    color: #323337;
+}
+
+
+/*Footer*/
+.footer {
+    padding: 100px 0;
+    background-color: #ff6fa6;;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #dfdcdc;
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media(max-width:991px){
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .nosotros {
+        padding:30px;
+    }
+    .nosotros-content h2 {
+        padding: 0;
+    }
+    .txt-p{
+        padding: 0;
+    }
+    .nosotros-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .nosotros-img{
+        display: none;
+    }
+
+    .services{
+        padding: 30px;
+    }
+
+    .services-content p {
+        padding: 0;
+    }
+
+    .services-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .services-1 {
+        margin-bottom: 25px;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    /*BLog*/
+    .blog{
+        padding: 30px;
+    }
+
+    .blog-content{
+        flex-direction: column;
+    }
+    .blog-1{
+        padding: 0;
+    }
+
+    /*Video*/
+    .video{
+        padding: 30px;
+    }
+
+    .video-content{
+        flex-direction: column;
+    }
+    .video-1{
+        padding: 0;
+    }
+
+
+
+    /*Footer*/
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+}
